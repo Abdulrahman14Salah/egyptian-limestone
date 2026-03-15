@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html tailus ui */
+@layer base {
+  :root {
+    --background: 43 27% 96%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 27 24% 30%;
+    --primary-foreground: 43 27% 96%;
+
+    --secondary: 33 25% 67%;
+    --secondary-foreground: 27 24% 20%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 37 30% 75%;
+    --accent-foreground: 27 24% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 37 20% 85%;
+    --input: 37 20% 85%;
+    --ring: 27 24% 30%;
+
+    --radius: 0.5rem;
+
+    --stone-beige: 37 33% 75%;
+    --sand: 33 25% 67%;
+    --dark-brown: 27 24% 30%;
+    --off-white: 43 27% 96%;
+    --charcoal: 0 0% 20%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  *{
+    @apply border-border
+  }
+}
+
+@layer components {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .entry-content ul,
+  .entry-content ol {
+    list-style: revert;
+    margin-left: revert;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .section-alt {
+    background-color: hsl(var(--stone-beige) / 0.25);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground hover:text-primary-foreground font-semibold text-sm md:text-base rounded transition-all duration-300 hover:opacity-90 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 border-2 border-primary text-primary font-semibold text-sm md:text-base rounded transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .btn-animated-border {
+    @apply relative inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground hover:text-primary-foreground font-semibold rounded overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .btn-animated-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--secondary)),
+      hsl(var(--primary-foreground)),
+      hsl(var(--secondary)),
+      hsl(var(--primary-foreground))
+    );
+    background-size: 300% 100%;
+    animation: border-shimmer 3s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .trust-card-bg {
+    background: linear-gradient(
+      270deg,
+      hsl(var(--primary) / 0.5),
+      hsl(var(--secondary) / 0.4),
+      hsl(var(--primary) / 0.6),
+      hsl(var(--secondary) / 0.3)
+    );
+    background-size: 400% 400%;
+    animation: trust-gradient 6s ease infinite;
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes border-shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 300% 50%;
+    }
+  }
+
+  @keyframes trust-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes cta-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .cta-animated-bg {
+    background: linear-gradient(
+      270deg,
+      hsl(var(--primary)),
+      hsl(var(--primary) / 0.85),
+      hsl(var(--dark-brown)),
+      hsl(var(--primary) / 0.9)
+    );
+    background-size: 400% 400%;
+    animation: cta-gradient 8s ease infinite;
+  }
+}

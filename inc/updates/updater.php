@@ -18,7 +18,7 @@ class MyTheme_GitHub_Updater
     public function __construct()
     {
 
-        $this->theme_slug = get_template();
+        $this->theme_slug = get_stylesheet();
         $this->theme_data = wp_get_theme($this->theme_slug);
         $this->github_api_url = MYTHEME_UPDATE_API;
         $this->github_repo = MYTHEME_GITHUB_REPO;

@@ -31,18 +31,7 @@ get_header(); ?>
                 <div class="grid md:grid-cols-2 gap-12 lg:gap-16">
                     <div>
                         <h2 class="font-display text-xl font-semibold text-primary mb-6">Send Us a Message</h2>
-                        <form class="space-y-4">
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Full Name *</label><input required="" type="text" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition"></div>
-                                <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Email *</label><input required="" type="email" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition"></div>
-                            </div>
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Company</label><input type="text" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition"></div>
-                                <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Country</label><input type="text" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition"></div>
-                            </div>
-                            <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Subject *</label><input required="" type="text" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition"></div>
-                            <div><label class="font-body text-sm font-medium text-foreground mb-1 block">Message *</label><textarea required="" rows="5" class="w-full px-4 py-3 rounded-lg border border-border bg-card font-body text-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition resize-none"></textarea></div><button type="submit" class="btn-primary w-full sm:w-auto">Send Message</button>
-                        </form>
+                        <?php echo do_shortcode('[contact-form-7 id="8bc5df0" title="Contact Us"]'); ?>
                     </div>
                     <div class="space-y-6">
                         <h2 class="font-display text-xl font-semibold text-primary mb-6">Contact Information</h2>

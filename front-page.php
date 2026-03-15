@@ -939,6 +939,7 @@ if (!defined('ABSPATH')) {
 				</div>
 			</div>
 		</section>
+
 		<section id="faq" class="section-padding section-alt">
 			<div class="ast-container">
 				<h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Frequently Asked Questions</h2>

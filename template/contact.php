@@ -51,15 +51,15 @@ get_header(); ?>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                             </svg>
                             <div>
-                                <p class="font-body font-medium text-foreground">Email</p><a href="mailto:info@egyptian-limestone.com" class="font-body text-sm text-foreground/70 hover:text-primary transition-colors">info@egyptian-limestone.com</a>
+                                <p class="font-body font-medium text-foreground mb-0">Email</p><a href="mailto:info@egyptian-limestone.com" class="font-body text-sm text-foreground/70 hover:text-primary transition-colors">info@egyptian-limestone.com</a>
                             </div>
                         </div>
                         <div class="flex gap-4 items-start"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-secondary flex-shrink-0 mt-1">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
                             <div>
-                                <p class="font-body font-medium text-foreground">Phone</p>
-                                <p class="font-body text-sm text-foreground/70">Available upon request</p>
+                                <p class="font-body font-medium text-foreground mb-0">Phone</p>
+                                <p class="font-body text-sm text-foreground/70 mb-0">Available upon request</p>
                             </div>
                         </div>
                         <div class="flex gap-4 items-start"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-6 h-6 text-secondary flex-shrink-0 mt-1">
@@ -67,8 +67,8 @@ get_header(); ?>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
                             <div>
-                                <p class="font-body font-medium text-foreground">Location</p>
-                                <p class="font-body text-sm text-foreground/70">Cairo, Egypt</p>
+                                <p class="font-body font-medium text-foreground mb-0">Location</p>
+                                <p class="font-body text-sm text-foreground/70 mb-0">Cairo, Egypt</p>
                             </div>
                         </div>
                         <div class="bg-card p-6 rounded-lg border border-border mt-8">

@@ -8,7 +8,7 @@ class MyTheme_GitHub_Updater
 {
 
     private const RELEASE_TRANSIENT_KEY = 'mytheme_github_release_';
-    private const RELEASE_CACHE_TTL = 6 * HOUR_IN_SECONDS;
+    private const RELEASE_CACHE_TTL = 1 * MINUTE_IN_SECONDS;
 
     private $theme_slug;
     private $theme_data;

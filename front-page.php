@@ -77,7 +77,10 @@ if (!defined('ABSPATH')) {
 							</svg><span class="font-display text-sm font-bold text-primary-foreground">500+ Projects</span><span class="font-body text-xs text-primary-foreground/70">Completed Globally</span></div>
 					</div>
 				</div>
-				<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"><a class="inline-flex items-center justify-center px-8 py-4 bg-card text-primary font-body font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-base" href="/request-quote">Request a Free Quote</a><a class="inline-flex items-center justify-center px-8 py-4 bg-card text-primary font-body font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-base" href="/types">View Limestone Types</a></div>
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+					<a class="inline-flex items-center justify-center px-8 py-4 bg-card text-primary hover:text-primary font-body font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-base" href="/request-quote">Request a Free Quote</a>
+					<a class="inline-flex items-center justify-center px-8 py-4 bg-card text-primary hover:text-primary font-body font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-base" href="/types">View Limestone Types</a>
+				</div>
 				<div class="inline-flex items-center justify-center gap-2 bg-foreground/70 rounded-full px-5 py-2.5 backdrop-blur-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-primary-foreground">
 						<rect width="20" height="16" x="2" y="4" rx="2"></rect>
 						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>

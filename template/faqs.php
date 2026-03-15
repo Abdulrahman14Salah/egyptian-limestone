@@ -24,16 +24,11 @@ get_header(); ?>
 <div>
 
     <main>
-        <section class="relative py-28 md:py-36 flex items-center justify-center">
-            <div class="absolute inset-0"><img src="<?php echo get_stylesheet_directory_uri(); ?>/frontend/assets/hero-faq.jpg" alt="" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-foreground/70"></div>
-            </div>
-            <div class="section-container relative z-10 text-center">
-                <h1 class="text-[2.5rem] md:text-[3.7rem] font-bold text-white leading-[1.1] mb-6">Frequently Asked <span class="text-primary">Questions</span></h1>
-            </div>
-        </section>
+
+        <?php get_template_part('/template/components/headers/page/style', '1'); ?>
+
         <section class="section-padding bg-background">
-            <div class="section-container">
+            <div class="ast-container">
                 <div class="max-w-3xl mx-auto">
                     <div class="space-y-3" data-orientation="vertical">
 

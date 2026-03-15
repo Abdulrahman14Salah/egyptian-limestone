@@ -138,7 +138,7 @@ add_action('wp_enqueue_scripts', 'my_custom_scripts');
 require_once(get_stylesheet_directory() . '/inc/features.php');
 
 
-require_once get_template_directory() . '/inc/config.php';
-require_once get_template_directory() . '/inc/github-updater.php';
+require_once get_stylesheet_directory() . '/inc/config.php';
+require_once get_stylesheet_directory() . '/inc/github-updater.php';
 
 new MyTheme_GitHub_Updater();

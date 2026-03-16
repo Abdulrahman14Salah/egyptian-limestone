@@ -34,10 +34,6 @@ if (!defined('ABSPATH')) {
 <?php get_header(); ?>
 
 <div>
-
-
-
-
 	<main>
 		<section class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
 			<div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url(&quot;<?php echo get_stylesheet_directory_uri(); ?>/frontend/assets/hero-quarry.jpg&quot;);"></div>
@@ -1059,8 +1055,8 @@ if (!defined('ABSPATH')) {
 			</div>
 		</section>
 	</main>
-
-
 </div><!-- #primary -->
+
+<div class="hidden btn-animated-border shrink-0"></div>
 
 <?php get_footer(); ?>

@@ -57,35 +57,6 @@ add_action('astra_body_top', function () {
         <div id="scroll-progress" class="h-full bg-secondary transition-[width] duration-100"></div>
     </div>
 
-    <script>
-        const progressBar = document.getElementById("scroll-progress");
-
-        let ticking = false;
-
-        function updateProgress() {
-
-            const scrollTop = document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-            const percent = (scrollTop / scrollHeight) * 100;
-
-            progressBar.style.width = percent + "%";
-
-            ticking = false;
-        }
-
-        window.addEventListener("scroll", () => {
-
-            if (!ticking) {
-
-                requestAnimationFrame(updateProgress);
-                ticking = true;
-
-            }
-
-        });
-    </script>
-
     <div class="bg-primary text-primary-foreground py-2 overflow-hidden">
         <div class="animate-marquee whitespace-nowrap flex gap-16"><span class="flex gap-16 text-xs md:text-sm font-body tracking-wide"><span>🏛️ Premium Egyptian Limestone — Direct from Quarry to Your Project</span><span>📦 Exporting to 40+ Countries Worldwide</span><span>💰 Request Bulk Pricing — Save Up to 50% vs European Stone</span><span>🚀 Fast Production: 2-3 Weeks for Standard Orders</span><span>✅ Custom Sizes, Finishes &amp; Packaging Available</span><span>📞 Contact Us: info@egyptian-limestone.com</span></span><span class="flex gap-16 text-xs md:text-sm font-body tracking-wide"><span>🏛️ Premium Egyptian Limestone — Direct from Quarry to Your Project</span><span>📦 Exporting to 40+ Countries Worldwide</span><span>💰 Request Bulk Pricing — Save Up to 50% vs European Stone</span><span>🚀 Fast Production: 2-3 Weeks for Standard Orders</span><span>✅ Custom Sizes, Finishes &amp; Packaging Available</span><span>📞 Contact Us: info@egyptian-limestone.com</span></span></div>
     </div>

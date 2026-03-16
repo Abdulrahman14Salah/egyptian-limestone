@@ -1060,6 +1060,6 @@ if (!defined('ABSPATH')) {
 	</main>
 </div><!-- #primary -->
 
-<div class="hidden btn-animated-border shrink-0"></div>
+<div class="hidden btn-animated-border shrink-0 lg:flex"></div>
 
 <?php get_footer(); ?>

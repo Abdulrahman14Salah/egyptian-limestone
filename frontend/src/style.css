@@ -169,6 +169,18 @@
     animation: marquee 15s linear infinite;
   }
 
+  .cta-animated-bg {
+    background: linear-gradient(
+      270deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary)),
+      hsl(var(--dark-brown)),
+      hsl(var(--primary))
+    );
+    background-size: 500% 500%;
+    animation: cta-gradient 8s ease infinite;
+  }
+
   @keyframes cta-gradient {
     0% {
       background-position: 0% 50%;
@@ -179,17 +191,5 @@
     100% {
       background-position: 0% 50%;
     }
-  }
-
-  .cta-animated-bg {
-    background: linear-gradient(
-      270deg,
-      hsl(var(--primary)),
-      hsl(var(--primary) / 0.85),
-      hsl(var(--dark-brown)),
-      hsl(var(--primary) / 0.9)
-    );
-    background-size: 400% 400%;
-    animation: cta-gradient 3s ease infinite;
   }
 }

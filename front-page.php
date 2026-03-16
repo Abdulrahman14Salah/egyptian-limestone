@@ -244,8 +244,8 @@ if (!defined('ABSPATH')) {
 			</div>
 		</section>
 
-		<section class="py-12 md:py-16 relative overflow-hidden bg-primary animate-[cta-gradient_3s_ease_infinite]">
-			<canvas id="miniSparkleCanvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+		<section class="py-12 md:py-16 relative overflow-hidden bg-primary cta-animated-bg">
+			<canvas class="miniSparkleCanvas absolute inset-0 w-full h-full pointer-events-none"></canvas>
 			<div class="ast-container text-center relative z-10">
 				<div class="flex items-center justify-center gap-2 mb-3">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 text-secondary animate-pulse">
@@ -588,8 +588,8 @@ if (!defined('ABSPATH')) {
 			</div>
 		</section>
 
-		<section class="py-12 md:py-16 relative overflow-hidden bg-primary animate-[cta-gradient_3s_ease_infinite]">
-			<canvas id="miniSparkleCanvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+		<section class="py-12 md:py-16 relative overflow-hidden cta-animated-bg">
+			<canvas class="miniSparkleCanvas absolute inset-0 w-full h-full pointer-events-none"></canvas>
 			<div class="ast-container text-center relative z-10">
 				<div class="flex items-center justify-center gap-2 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 text-secondary animate-pulse">
 						<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
@@ -1032,7 +1032,7 @@ if (!defined('ABSPATH')) {
 			</div>
 		</section>
 		<section class="section-padding relative overflow-hidden bg-primary">
-			<canvas id="miniSparkleCanvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+			<canvas class="miniSparkleCanvas absolute inset-0 w-full h-full pointer-events-none"></canvas>
 			<div class="absolute inset-0 cta-animated-bg opacity-80"></div>
 			<div class="ast-container text-center relative z-10">
 				<div class="flex items-center justify-center gap-2 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-secondary animate-pulse">

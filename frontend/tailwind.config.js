@@ -2,6 +2,7 @@
 export default {
   darkMode: "class", // Enables dark mode using a CSS class
   content: ["../*.php", "../**/*.php", "./src/**/*.{js,ts,jsx,tsx,html}"],
+  safelist: ["btn-animated-border", "shrink-0", "lg:flex"],
   corePlugins: {
     preflight: false,
   },

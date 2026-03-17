@@ -51,8 +51,6 @@ add_action('admin_head', 'fix_svg');
  */
 add_action('astra_body_top', function () {
 ?>
-
-
     <div class="fixed top-0 left-0 right-0 z-[60] h-1">
         <div id="scroll-progress" class="h-full bg-secondary transition-[width] duration-100"></div>
     </div>

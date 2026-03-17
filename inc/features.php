@@ -60,3 +60,59 @@ add_action('astra_body_top', function () {
     </div>
 <?php
 });
+
+
+/**
+ * Preload LCP image on homepage for better performance
+ */
+function egyptian_limestone_preload_lcp()
+{
+
+    if (!is_front_page()) return;
+
+    $hero = get_stylesheet_directory_uri() . '/frontend/assets/hero-quarry.jpg';
+
+    echo '<link rel="preload" as="image" href="' . $hero . '" fetchpriority="high">';
+}
+add_action('wp_head', 'egyptian_limestone_preload_lcp', 1);
+
+/*
+ * Disable Contact Form 7 globally
+ */
+add_filter('wpcf7_load_css', '__return_false');
+add_filter('wpcf7_load_js', '__return_false');
+
+
+/*
+ * Load CF7 only on specific pages
+ */
+function load_cf7_only_on_needed_pages()
+{
+
+    if (is_page(['contact', 'request-quote'])) {
+
+        wpcf7_enqueue_scripts();
+        wpcf7_enqueue_styles();
+    }
+}
+add_action('wp_enqueue_scripts', 'load_cf7_only_on_needed_pages');
+
+
+function remove_jquery_migrate($scripts)
+{
+    if (!is_admin() && isset($scripts->registered['jquery'])) {
+        $scripts->registered['jquery']->deps =
+            array_diff($scripts->registered['jquery']->deps, ['jquery-migrate']);
+    }
+}
+add_action('wp_default_scripts', 'remove_jquery_migrate');
+
+
+add_filter('script_loader_tag', function ($tag, $handle) {
+
+    if ($handle === 'astra-addon-js') {
+        return str_replace('<script ', '<script defer ', $tag);
+    }
+
+    return $tag;
+}, 10, 2);

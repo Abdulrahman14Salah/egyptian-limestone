@@ -8,8 +8,6 @@ class MyTheme_GitHub_Updater
 {
 
     private const RELEASE_TRANSIENT_KEY = 'mytheme_github_release_';
-    private const RELEASE_CACHE_TTL = 1 * MINUTE_IN_SECONDS;
-
     private $theme_slug;
     private $theme_data;
     private $github_api_url;
@@ -205,7 +203,7 @@ class MyTheme_GitHub_Updater
         set_transient(
             self::RELEASE_TRANSIENT_KEY . $this->theme_slug,
             $release,
-            self::RELEASE_CACHE_TTL
+            $this->get_cache_ttl()
         );
 
         return $release;
@@ -242,5 +240,14 @@ class MyTheme_GitHub_Updater
         }
 
         return '';
+    }
+
+    private function get_cache_ttl()
+    {
+        if (current_user_can('manage_options')) {
+            return 5 * MINUTE_IN_SECONDS;
+        }
+
+        return 12 * HOUR_IN_SECONDS;
     }
 }
